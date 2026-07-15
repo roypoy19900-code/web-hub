@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻汇业务导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", system-ui, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #222;
+            margin-bottom: 40px;
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        .group-title {
+            width: 100%;
+            margin: 30px 0 12px;
+            font-size: 20px;
+            color: #222;
+            border-left: 4px solid #1967d2;
+            padding-left: 12px;
+        }
+
+        .card-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 30px;
+        }
+
+        .link-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 30px 24px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            transition: all 0.24s ease;
+        }
+
+        .link-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.09);
+        }
+
+        .card-name {
+            font-size: 19px;
+            color: #1967d2;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card-url {
+            font-size: 13px;
+            color: #777;
+            word-break: break-all;
+            margin-bottom: 20px;
+        }
+
+        .enter-btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #1967d2;
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: background 0.2s;
+        }
+
+        .enter-btn:hover {
+            background-color: #0d47a1;
+        }
+
+        @media (max-width: 768px) {
+            .card-box {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">寻汇业务快捷导航</h1>
+
+        <div class="group-title">寻汇平台专区</div>
+        <div class="card-box">
+            <div class="link-card">
+                <div class="card-name">寻汇正式平台</div>
+                <div class="card-url">https://pro.sunrate.com/#/login</div>
+                <a href="https://pro.sunrate.com/#/login" target="_blank" class="enter-btn">进入系统</a>
+            </div>
+
+            <div class="link-card">
+                <div class="card-name">寻汇测试环境</div>
+                <div class="card-url">https://pro.sandbox.sunrate.com/#/login</div>
+                <a href="https://pro.sandbox.sunrate.com/#/login" target="_blank" class="enter-btn">进入测试</a>
+            </div>
+
+            <div class="link-card">
+                <div class="card-name">Boost业务后台</div>
+                <div class="card-url">https://boost.sunrate.com/login</div>
+                <a href="https://boost.sunrate.com/login" target="_blank" class="enter-btn">登录Boost</a>
+            </div>
+        </div>
+
+        <div class="group-title">物流查询</div>
+        <div class="card-box">
+            <div class="link-card">
+                <div class="card-name">4tracking</div>
+                <div class="card-url">https://www.4tracking.net/zh-cn/</div>
+                <a href="https://www.4tracking.net/zh-cn/" target="_blank" class="enter-btn">查询</a>
+            </div>
+
+            <div class="link-card">
+                <div class="card-name">17track</div>
+                <div class="card-url">https://www.17track.net/zh-cn</div>
+                <a href="https://www.17track.net/zh-cn" target="_blank" class="enter-btn">查询</a> 
+ </div>
+            <div class="link-card">
+                <div class="card-name">船运、柜号</div>
+                <div class="card-url">https://www.track-trace.com</div>
+                <a href="https://www.track-trace.com" target="_blank" class="enter-btn">查询</a> 
+
+            </div>
+        </div>
+
+        <div class="group-title">签名</div>
+        <div class="card-box">
+            <div class="link-card">
+                <div class="card-name">中文</div>
+                <div class="card-url">https://www.yishuzi.com/b/13.htm</div>
+                <a href="https://www.yishuzi.com/b/13.htm" target="_blank" class="enter-btn">制作</a>
+            </div>
+
+            <div class="link-card">
+                <div class="card-name">英文</div>
+                <div class="card-url">https://fontmeme.com/zh/signature-fonts/</div>
+                <a href="https://fontmeme.com/zh/signature-fonts/" target="_blank" class="enter-btn">制作</a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
